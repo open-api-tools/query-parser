@@ -50,7 +50,7 @@ final class OpenApiQueryParser implements QueryParser
 
         $arr = explode(']', $subVariable, 2);
         if (count($arr) === 1) {
-            return [$name . '['. $subVariable, []];
+            return [$name . '[' . $subVariable, []];
         }
         $subVariable = '[' . $subVariable;
 
